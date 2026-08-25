@@ -1,19 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Roblox Quiz</title>
+<title>¿Cuánto sabes de Roblox? Descubre tus guías personalizadas</title>
+<meta name="description" content="Responde 2 preguntas rápidas y descubre las mejores guías de Roblox: Robux gratis, códigos activos, eventos y top juegos de esta semana.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 
-body{
+html, body {
+  min-height:100vh;
   background:linear-gradient(135deg,#1a0533 0%,#0d1b4a 50%,#2d0a1e 100%);
   font-family:'Inter',sans-serif;
-  min-height:100vh;
+}
+
+body {
   display:flex;
   align-items:center;
   justify-content:center;
   padding:20px 16px;
+  min-height:100vh;
 }
 
 .container{
@@ -209,7 +217,7 @@ body{
   font-weight:500;
 }
 
-/* ── FINAL — APP CARDS ── */
+/* ── FINAL — BLOG CARDS ── */
 .final-step{display:none}
 .final-step.active{display:block}
 
@@ -343,7 +351,6 @@ body{
 
 .disclaimer a{color:#c4a8ff;text-decoration:none;font-weight:600}
 
-/* ── WP CLEANUP ── */
 @media(max-width:480px){
   body{padding:14px 12px;align-items:flex-start;padding-top:30px}
   .card{padding:28px 20px 24px;border-radius:20px}
@@ -353,8 +360,9 @@ body{
   .app-name{font-size:14px}
 }
 </style>
+</head>
 
-<div class="app" style="position:fixed;inset:0;z-index:999999;background:linear-gradient(135deg,#1a0533 0%,#0d1b4a 50%,#2d0a1e 100%);display:flex;align-items:center;justify-content:center;padding:20px 16px;overflow-y:auto;-webkit-overflow-scrolling:touch;">
+<body>
 <div class="container">
 
   <div class="progress-wrap">
@@ -394,16 +402,16 @@ body{
     <!-- RESULT -->
     <div class="step" id="step-result">
       <div class="result-title">Robux, Códigos y Eventos<br>Exclusivos para Ti</div>
-      <div class="result-btn" id="btn-see-pick">
+      <button class="result-btn" id="btn-see-pick">
         ⚡ Ver mis resultados →
-      </div>
+      </button>
       <div class="result-sub">Toca para ver tu contenido personalizado</div>
     </div>
 
     <!-- FINAL — BLOG CARDS -->
     <div class="final-step" id="step-final">
       <div style="text-align:center">
-        <div class="best-match">⭐ Best match</div>
+        <div class="best-match">⭐ Mejor resultado para ti</div>
         <div class="match-desc">Según tus respuestas, esto es lo mejor para ti</div>
       </div>
 
@@ -411,61 +419,61 @@ body{
 
         <a class="app-card featured" href="https://robloxmania.becasycursos.online/como-conseguir-robux-gratis/">
           <div class="app-icon">
-            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/robux_gratis_texto_mas_grande_1254x1254.webp" alt="Robux gratis">
+            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/robux_gratis_texto_mas_grande_1254x1254.webp" alt="Robux gratis Roblox 2026">
           </div>
           <div class="app-info">
             <div class="app-name">Robux gratis: método que aún funciona en 2026</div>
             <div class="app-dev">Roblox Mania</div>
             <div class="app-meta">
-              <span class="app-price">Free</span>
+              <span class="app-price">Gratis</span>
               <span class="app-rating">★ 4.8</span>
             </div>
           </div>
-          <div class="app-cta">¡Lo quiero →</div>
+          <div class="app-cta">Ver guía →</div>
         </a>
 
         <a class="app-card" href="https://robloxmania.becasycursos.online/top-juegos-roblox-semana/">
           <div class="app-icon">
-            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/top_juegos_roblox_icono_sin_texto_extra_1254x1254.webp" alt="Top juegos Roblox">
+            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/top_juegos_roblox_icono_sin_texto_extra_1254x1254.webp" alt="Top juegos Roblox semana">
           </div>
           <div class="app-info">
             <div class="app-name">Top juegos de Roblox esta semana</div>
             <div class="app-dev">Roblox Mania</div>
             <div class="app-meta">
-              <span class="app-price">Free</span>
+              <span class="app-price">Gratis</span>
               <span class="app-rating">★ 4.5</span>
             </div>
           </div>
-          <div class="app-cta">¡Lo quiero →</div>
+          <div class="app-cta">Ver guía →</div>
         </a>
 
         <a class="app-card" href="https://robloxmania.becasycursos.online/eventos-activos-roblox-semana/">
           <div class="app-icon">
-            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/eventos_activos_nueva.webp" alt="Eventos Roblox">
+            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/eventos_activos_nueva.webp" alt="Eventos activos Roblox">
           </div>
           <div class="app-info">
             <div class="app-name">Eventos activos de Roblox esta semana</div>
             <div class="app-dev">Roblox Mania</div>
             <div class="app-meta">
-              <span class="app-price">Free</span>
+              <span class="app-price">Gratis</span>
               <span class="app-rating">★ 4.3</span>
             </div>
           </div>
-          <div class="app-cta">¡Lo quiero →</div>
+          <div class="app-cta">Ver guía →</div>
         </a>
 
         <a class="app-card" href="https://robloxmania.becasycursos.online/steal-a-brainrot-codigos-agosto-2026/">
           <div class="app-icon">
-            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/steal_brainrot_codigos_nueva_1254.webp" alt="Steal a Brainrot códigos">
+            <img src="https://robloxmania.becasycursos.online/wp-content/uploads/2026/08/steal_brainrot_codigos_nueva_1254.webp" alt="Steal a Brainrot códigos agosto 2026">
           </div>
           <div class="app-info">
             <div class="app-name">Steal a Brainrot: códigos agosto 2026</div>
             <div class="app-dev">Roblox Mania</div>
             <div class="app-meta">
-              <span class="app-price">Free</span>
+              <span class="app-price">Gratis</span>
             </div>
           </div>
-          <div class="app-cta">¡Lo quiero →</div>
+          <div class="app-cta">Ver guía →</div>
         </a>
 
       </div>
@@ -474,28 +482,13 @@ body{
   </div>
 
   <div class="disclaimer">
-    Sitio informativo independiente. Los resultados pueden variar. <a href="https://robloxmania.becasycursos.online/politica-de-privacidad/">Saber más →</a>
+    Sitio informativo independiente. Los resultados pueden variar.
+    <a href="https://robloxmania.becasycursos.online/politica-de-privacidad/">Política de privacidad →</a>
   </div>
 
 </div>
-</div>
 
 <script>
-  try {
-    (function() {
-      var s = 'background:linear-gradient(135deg,#1a0533 0%,#0d1b4a 50%,#2d0a1e 100%)!important;margin:0!important;padding:0!important;overflow:hidden!important;';
-      document.documentElement.style.cssText = s;
-      document.body.style.cssText = s + 'position:fixed!important;inset:0!important;width:100%!important;';
-      ['header','footer','nav','aside','#wpadminbar','.site-header','.site-footer',
-       '.entry-header','.entry-footer','.sidebar','.navigation','.site-info',
-       '.entry-title','.page-header'].forEach(function(sel) {
-        document.querySelectorAll(sel).forEach(function(el) {
-          if (!el.closest('.app')) el.style.display = 'none';
-        });
-      });
-    })();
-  } catch(err) {}
-
 var totalSteps = 2;
 
 function setProgress(step, total) {
@@ -547,3 +540,6 @@ document.addEventListener('click', function(e) {
 
 setProgress(0, totalSteps);
 </script>
+
+</body>
+</html>
